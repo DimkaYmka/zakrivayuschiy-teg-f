@@ -37,10 +37,20 @@ input {
   font-size: inherit;
 }
 
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 ul,
 ol {
   list-style: none;
 }
+
+
 
 .visually-hidden {
   position: absolute;
