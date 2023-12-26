@@ -13,6 +13,7 @@
   --core-heart: #00CC14;
   --sparks-heart: ;
   --main-body: #00CC14;
+  --text-button: #00CC14;
   --sparks-color: #ff0000;
   --page-background-image: repeating-linear-gradient(
       to left,
@@ -31,6 +32,7 @@
   --core-heart: #000;
   --sparks-heart: ;
   --main-body: #000;
+  --text-button: #ffffff;
   --page-background-image: repeating-linear-gradient(
       to left,
       #d3d3d3 0 2px,
@@ -58,6 +60,7 @@
     --core-heart: #000;
     --sparks-heart: ;
     --main-body: #000;
+    --text-button: #ffffff;
     --page-background-image: repeating-linear-gradient(
         to left,
         #d3d3d3 0 2px,
