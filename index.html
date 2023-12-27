@@ -16,8 +16,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <div class="header__title">&lt;/HTML&gt;</div>
+      <h1 class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -45,25 +45,27 @@
       </nav>
     </header>
     <main>
-      <ul class="card-list">
-        <li class="card-list__item">
-          <h3 class="card-list__title">
+      <div class="card-list">
+        <article class="card-list__item">
+          <h2 class="card-list__title">
             Фритрек и нулевой спринт: Подготовка к работе
-          </h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img
-              src="./images/image.jpeg"
-              alt=""
-              class="grayscale card-list__img"
-            />
-            <p class="card-list__text">
+          </h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img
+                src="./images/image.jpeg"
+                alt=""
+                class="grayscale card-list__img"
+              />
+            </div>
+            <figcaption class="card-list__text">
               Это было самое начало пути. На этом этапе важно было проникнуться
               основами и настроиться на учёбу. И, возможно, подумать, как новые
               знания могут повлиять на ваше будущее.
-            </p>
-            <p class="card-list__text">Настрой - это важно</p>
-          </div>
+            </figcaption>
+            <figcaption class="card-list__text">Настрой - это важно</figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -97,32 +99,34 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
+        </article>
 
-        <li class="card-list__item">
-          <h3 class="card-list__title">1 спринт: Я — чистый лист</h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img
-              src="./images/image1.jpeg"
-              alt=""
-              class="invert card-list__img"
-            />
-            <p class="card-list__text">
+        <article class="card-list__item">
+          <h2 class="card-list__title">1 спринт: Я — чистый лист</h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img
+                src="./images/image1.jpeg"
+                alt=""
+                class="invert card-list__img"
+              />
+            </div>
+            <figcaption class="card-list__text">
               На первых этапах мы работали со страхами и сомнениями, которые
               часто испытывают новички. Один из них — страх перед чистым листом.
               Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто
               за этим ощущением скрываются более глубокие вопросы: с чего
               начать? а вдруг будет слишком сложно? что, если я не справлюсь?
-            </p>
-            <p class="card-list__text">
+            </figcaption>
+            <figcaption class="card-list__text">
               Обучение началось интересно, однако курс по верстке немного
               затянут.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -156,26 +160,32 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
+        </article>
 
-        <li class="card-list__item">
-          <h3 class="card-list__title">1 спринт: А если не получится?</h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img src="./images/image2.jpeg" alt="" class="sepia card-list__img" />
-            <p class="card-list__text">
+        <article class="card-list__item">
+          <h2 class="card-list__title">1 спринт: А если не получится?</h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img
+                src="./images/image2.jpeg"
+                alt=""
+                class="sepia card-list__img"
+              />
+            </div>
+            <figcaption class="card-list__text">
               Первый проект — позади! Но это всё ещё самое начало пути. Радость
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
               наоборот, могли вдохновиться успехами и поверить в себя.
-            </p>
-            <p class="card-list__text">
+            </figcaption>
+            <figcaption class="card-list__text">
               Всегда приятно наблюдать завершенный проект, который у тебя
               получился.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -209,29 +219,33 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
+        </article>
 
-        <li class="card-list__item">
-          <h3 class="card-list__title">2 спринт: Погоня за идеалом</h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img
-              src="./images/image3.jpeg"
-              alt=""
-              class="rotate card-list__img"
-            />
-            <p class="card-list__text">
+        <article class="card-list__item">
+          <h2 class="card-list__title">2 спринт: Погоня за идеалом</h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img
+                src="./images/image3.jpeg"
+                alt=""
+                class="rotate card-list__img"
+              />
+            </div>
+            <figcaption class="card-list__text">
               На этом этапе вы уже достаточно разбирались в основах вёрстки,
               чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
               за идеалом и понять, что он недостижим. А, может, вы вовсе и не
               подвержены перфекционизму и вместо того, чтобы сделать идеально,
               старались просто сделать.
-            </p>
-            <p class="card-list__text">Просто сделаать - уже хорошо.</p>
-          </div>
+            </figcaption>
+            <figcaption class="card-list__text">
+              Просто сделаать - уже хорошо.
+            </figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -265,33 +279,35 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
+        </article>
 
-        <li class="card-list__item">
-          <h3 class="card-list__title">2 спринт: О тех, кто рядом</h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img
-              src="./images/image4.jpeg"
-              alt=""
-              class="saturate card-list__img"
-            />
-            <p class="card-list__text">
+        <article class="card-list__item">
+          <h2 class="card-list__title">2 спринт: О тех, кто рядом</h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img
+                src="./images/image4.jpeg"
+                alt=""
+                class="saturate card-list__img"
+              />
+            </div>
+            <figcaption class="card-list__text">
               Всё это время вы были не одиноки (хотя, возможно, иногда и
               чувствовали, что одни против целого мира). Вас окружали
               одногруппники, команда сопровождения и просто близкие люди,
               которым можно пожаловаться, если очередной макет просто так не
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
-            </p>
-            <p class="card-list__text">
+            </figcaption>
+            <figcaption class="card-list__text">
               Также осваивать что то легче, когда рядом есть кто то, кто уже в
               этом хорошо разбирается.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -325,26 +341,28 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
+        </article>
 
-        <li class="card-list__item">
-          <h3 class="card-list__title">3 спринт: Обходные стратегии</h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img src="./images/image5.jpeg" alt="" class="card-list__img" />
-            <p class="card-list__text">
+        <article class="card-list__item">
+          <h2 class="card-list__title">3 спринт: Обходные стратегии</h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img src="./images/image5.jpeg" alt="" class="card-list__img" />
+            </div>
+            <figcaption class="card-list__text">
               На этом курсе вы постоянно решали разные задачи. В какой-то момент
               вам могло показаться, что решения просто иссякли. Значит, пришло
               время посмотреть на задачу под другим углом.
-            </p>
-            <p class="card-list__text">
+            </figcaption>
+            <figcaption class="card-list__text">
               Умение смотреть на вещи под разными углами, очень хорошо помогает
               в программирование.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -378,32 +396,34 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
+        </article>
 
-        <li class="card-list__item">
-          <h3 class="card-list__title">3 спринт: Когда опускаются руки</h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img
-              src="./images/image6.jpeg"
-              alt=""
-              class="multiple card-list__img"
-            />
-            <p class="card-list__text">
+        <article class="card-list__item">
+          <h2 class="card-list__title">3 спринт: Когда опускаются руки</h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img
+                src="./images/image6.jpeg"
+                alt=""
+                class="multiple card-list__img"
+              />
+            </div>
+            <figcaption class="card-list__text">
               Во время учёбы часто возникает чувство, когда не знаешь, за что
               хвататься. Вроде и проектную пора сдавать, и задачи хочется
               порешать, и в теории получше разобраться, и жизнь не забыть
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
-            </p>
-            <p class="card-list__text">
+            </figcaption>
+            <figcaption class="card-list__text">
               Важно привить себе дисциплину и просто идти вперед маленькми
               шагами.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -437,33 +457,35 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
+        </article>
 
-        <li class="card-list__item">
-          <h3 class="card-list__title">«Сейчас я здесь»</h3>
-          <div class="card-list__conteiner">
-            <span class="card-list__img-span">&lt;/HTML&gt;</span>
-            <img
-              src="./images/image.jpg"
-              alt=""
-              class="multiple card-list__img"
-            />
-            <p class="card-list__text">
+        <article class="card-list__item">
+          <h2 class="card-list__title">«Сейчас я здесь»</h2>
+          <figure class="card-list__conteiner">
+            <div class="card-list-wrapper">
+              <span class="card-list__img-span">&lt;/HTML&gt;</span>
+              <img
+                src="./images/image.jpg"
+                alt=""
+                class="multiple card-list__img"
+              />
+            </div>
+            <figcaption class="card-list__text">
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
               Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
               с окончанием курса учёба не заканчивается. Вёрстка — это целый
               мир. И этот мир постоянно меняется. Познать его полностью не
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
-            </p>
-            <p class="card-list__text">
+            </figcaption>
+            <figcaption class="card-list__text">
               А в этой точке пути, я чувствую прибижение праздников и
               заслуженный отдых.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <div class="card-list__div">
             <button class="card__icon-button">
               <svg
@@ -497,11 +519,11 @@
               </svg>
             </button>
             <button class="button card__like-button">
-              <span class="card-list__text button__text">Like</span>
+              <span class="button__text">Like</span>
             </button>
           </div>
-        </li>
-      </ul>
+        </article>
+      </div>
     </main>
     <footer class="footer">
       <button
@@ -516,14 +538,18 @@
         </svg>
       </button>
     </footer>
-    <dialog id="dialog-id">
+    <dialog class="dialog" id="dialog-id">
       <div class="dialog__conteiner">
         <svg class="footer__button-icon button__text" viewBox="0 0 42 42">
           <use href="svg/floppy.svg#floppy" />
         </svg>
         <h2 class="dialog__text">Вставьте дискету, чтобы продолжить</h2>
       </div>
-      <button class="dialog__button" type="button" onclick="window['dialog-id'].close()">
+      <button
+        class="dialog__button"
+        type="button"
+        onclick="window['dialog-id'].close()"
+      >
         <span class="button__text footer__text">ok</span>
       </button>
     </dialog>

@@ -42,15 +42,6 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  .page {
-    --background-color: #000;
-    --text-color: #00cc14;
-    --themes-main-color: #00cc14;
-    --background-pic: url('../images/background.jpg');
-  }
-} */
-
 @media (prefers-color-scheme: light) {
   .page {
     --background-color: #fff;

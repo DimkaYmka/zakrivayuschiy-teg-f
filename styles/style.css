@@ -13,6 +13,15 @@
 
 */
 
+.like-icon {
+}
+
+.theme-menu {
+}
+
+.header__theme-menu {
+}
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -48,7 +57,7 @@
   filter: saturate(200%);
 }
 
-dialog {
+.dialog {
   display: grid;
   position: fixed;
   inset: 0;
@@ -57,12 +66,12 @@ dialog {
   border: 2px solid var(--text-color);
 }
 
-dialog:not([open]) {
+.dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
 }
 
-dialog::backdrop {
+.dialog::backdrop {
   background-color: rgb(0 0 0 / 0.3);
   backdrop-filter: blur(7px);
 }
@@ -131,9 +140,10 @@ dialog::backdrop {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 696px;
+  max-width: 700px;
+  max-height: 370px;
   background-color: var(--background-color);
-  margin: 102px auto 95px;
+  margin: 98px auto 97px;
   border: 2px solid var(--themes-main-color);
   box-sizing: border-box;
   font-family: var(--accent-font);
@@ -142,7 +152,6 @@ dialog::backdrop {
 .header__title {
   color: var(--text-color);
   padding: 120px 14px 20px;
-  /* width: 343px; */
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-style: normal;
   font-weight: 400;
@@ -152,7 +161,7 @@ dialog::backdrop {
 }
 
 .header__subtitle {
-  padding: 0 0 25px;
+  padding: 0 0 20px;
   text-transform: uppercase;
   color: var(--text-color);
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
@@ -161,16 +170,10 @@ dialog::backdrop {
   line-height: normal;
 }
 
-.theme-menu {
-}
-
-.header__theme-menu {
-}
-
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   padding: 0px 0px 25px 20px;
 }
 
@@ -212,20 +215,24 @@ dialog::backdrop {
 }
 
 .card-list {
-  padding-bottom: 54px;
+  padding-bottom: 52px;
 }
 
 .card-list__item {
   border: 2px solid var(--themes-main-color);
   background-color: var(--background-color);
   box-sizing: border-box;
-  max-width: 696px;
+  max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
 }
 
 .card-list__item:last-child {
   margin-bottom: 0;
+}
+
+.card-list-wrapper {
+  border-bottom: 2px solid var(--text-color);
 }
 
 .card-list__title {
@@ -235,18 +242,24 @@ dialog::backdrop {
   font-style: normal;
   font-weight: 785;
   line-height: normal;
+  border-bottom: 2px solid var(--text-color);
 }
 
 .card-list__conteiner {
   position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 27px;
+  row-gap: 24px;
+  margin: 0;
 }
 
 .card-list__img {
   object-fit: cover;
   object-position: center;
+  display: block;
+  inline-size: 101%;
+  aspect-ratio: 1/1;
+  max-width: 696px;
 }
 
 .card-list__img-span {
@@ -255,7 +268,6 @@ dialog::backdrop {
   top: 20px;
   z-index: 1;
   opacity: 0.5;
-  button__text-mode: hard-light;
   font-family: var(--accent-font);
   color: var(--text-color);
 }
@@ -267,17 +279,13 @@ dialog::backdrop {
   font-style: normal;
   font-weight: 465;
   line-height: 21px;
-  /* background-color: var(--background-color); */
 }
 
 .card-list__div {
   display: flex;
   justify-content: flex-end;
-  padding: 25px 25px 25px 0;
+  padding: 25px 25px 20px 0;
   gap: 0px;
-}
-
-.like-icon {
 }
 
 .card__like-button {
@@ -289,15 +297,16 @@ dialog::backdrop {
   font-weight: 400;
   line-height: 90%;
   color: var(--text-color);
+  height: 38px;
+  width: 130px;
 }
 
 .footer {
   box-sizing: border-box;
   background-color: var(--background-color);
-
   margin: 0 auto;
   text-align: center;
-  max-width: 335px;
+  max-width: 310px;
   margin-bottom: 100px;
 }
 
@@ -309,6 +318,8 @@ dialog::backdrop {
   margin: 0 auto;
   width: 100%;
   color: var(--text-color);
+  gap: 10px;
+  padding: 15px 20px;
 }
 
 .footer__button-icon {
@@ -316,10 +327,6 @@ dialog::backdrop {
   inline-size: 28px;
   block-size: 28px;
   color: var(--text-color);
-}
-
-.footer__text {
-  padding: 20px 10px;
 }
 
 .button__text {
@@ -337,13 +344,22 @@ dialog::backdrop {
     padding: 140px 14px 20px;
   }
 
+  .footer{
+    max-width: 338px;
+  }
+
   .footer__button {
     justify-content: center;
     flex-direction: row-reverse;
+    padding: 14px 0px;
   }
 
   .footer__button-icon {
     inline-size: 21px;
     block-size: 21px;
+  }
+
+  .card-list__conteiner {
+    row-gap: 27px;
   }
 }
