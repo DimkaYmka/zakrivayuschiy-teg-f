@@ -232,7 +232,7 @@
 }
 
 .card-list-wrapper {
-  border-bottom: 2px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
 }
 
 .card-list__title {
@@ -274,7 +274,7 @@
 
 .card-list__text {
   color: var(--text-color);
-  padding: 24px 25px 3px;
+  padding: 24px 25px 2px;
   font-size: 18px;
   font-style: normal;
   font-weight: 465;
