@@ -11,15 +11,14 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
-*/
 
-.like-icon {
+ */
+.card__icon-button:focus {
+  outline: none;
 }
 
-.theme-menu {
-}
-
-.header__theme-menu {
+.card__icon-button:focus-visible {
+  outline: none;
 }
 
 .page {
@@ -64,6 +63,8 @@
   transition: opacity 0.3s ease-in-out;
   background-color: var(--background-color);
   border: 2px solid var(--text-color);
+  padding: 25px 30px;
+  max-inline-size: 355px;
 }
 
 .dialog:not([open]) {
@@ -141,7 +142,6 @@
   flex-direction: column;
   align-items: center;
   max-width: 700px;
-  max-height: 370px;
   background-color: var(--background-color);
   margin: 98px auto 97px;
   border: 2px solid var(--themes-main-color);
@@ -174,7 +174,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 0px 0px 25px 20px;
+  padding: 0px 0px 22px 20px;
 }
 
 .theme-menu__item {
@@ -257,7 +257,7 @@
   object-fit: cover;
   object-position: center;
   display: block;
-  inline-size: 101%;
+  inline-size: 100%;
   aspect-ratio: 1/1;
   max-width: 696px;
 }
@@ -274,7 +274,7 @@
 
 .card-list__text {
   color: var(--text-color);
-  padding: 0 25px;
+  padding: 24px 25px 3px;
   font-size: 18px;
   font-style: normal;
   font-weight: 465;
@@ -344,7 +344,7 @@
     padding: 140px 14px 20px;
   }
 
-  .footer{
+  .footer {
     max-width: 338px;
   }
 

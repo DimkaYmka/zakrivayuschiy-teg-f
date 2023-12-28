@@ -43,7 +43,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .page {
+  :root.page {
     --background-color: #fff;
     --themes-main-color: #000;
     --text-color: #000;
